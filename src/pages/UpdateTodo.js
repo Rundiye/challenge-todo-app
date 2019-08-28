@@ -7,12 +7,12 @@ class UpdateTodo extends Component {
   state = {
     title: '',
     body: '',
-    todoId: undefined,
+    todoId: this.id
   }
 
   componentDidMount() {
     todoService
-    .getTodo()
+    .getTodo(this.state.todoId)
     .then(response => {
       const { title, body } = response.data;
       
