@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-
 import Home from './pages/Home'
 import CreateTodo from './pages/CreateTodo'
 import UpdateTodo from './pages/UpdateTodo'
+
 import './App.css';
 
 

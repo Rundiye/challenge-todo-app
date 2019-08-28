@@ -7,7 +7,7 @@ class UpdateTodo extends Component {
   state = {
     title: '',
     body: '',
-    todoId: this.id
+    //todoId: Couldn't get the id from the todo task
   }
 
   componentDidMount() {
