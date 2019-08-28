@@ -1,33 +1,70 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* HomePage */
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin: 10% 5% 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6%;
+}
+
+.title-underline {
+  border-bottom: 2px solid #ececec;
+  margin-bottom: 9%;
+  padding-bottom: 3%;
+}
+
+.container-border {
+  border: 2px solid #ececec;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
+.icon {
+  width: 50%;
+}
+
+/* Form */
+
+input {
+  padding: 5%;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  margin-bottom: 5%;
 }
