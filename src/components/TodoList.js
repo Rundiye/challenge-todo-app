@@ -51,7 +51,7 @@ class TodoList extends Component {
                 <div className="title-icon-div">
                   <h3>{todo.title}</h3>
                   <div className="title-icon-div">
-                    <Link to='/updateTodo'>
+                    <Link to={`/updateTodo/${todo._id}`}>
                       <img className="icon" src="../../images/edit-icon.png" alt="add to do task ikon"/>
                     </Link>
                     <button onClick={() => {

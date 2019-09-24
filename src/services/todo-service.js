@@ -4,7 +4,6 @@ class TodoService {
   constructor() {
     this.todoRoute = axios.create({
       baseURL: 'http://localhost:4000/api/v1',
-      withCredentials: true,
     })
   }
   getAllTodos() {
@@ -22,8 +21,8 @@ class TodoService {
     .then(response => response)
   }
 
-  updateTodo(id, updatedTodo) {
-    return this.todoRoute.put(`/todos/${id}`, updatedTodo)
+  updateTodo(id, updated) {
+    return this.todoRoute.put(`/todos/${id}`, updated)
     .then(response => response)
   }
 

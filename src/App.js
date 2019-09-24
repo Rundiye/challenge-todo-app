@@ -17,7 +17,7 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/createTodo' exact component={CreateTodo}/>
-            <Route path='/updateTodo' exact component={UpdateTodo}/>
+            <Route path='/updateTodo/:id' exact component={UpdateTodo}/>
           </Switch>
         </div>
       </Router>

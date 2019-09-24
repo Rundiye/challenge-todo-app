@@ -7,7 +7,7 @@ class UpdateTodo extends Component {
   state = {
     title: '',
     body: '',
-    //todoId: Couldn't get the id from the todo task
+    todoId: this.props.match.params.id
   }
 
   componentDidMount() {
@@ -15,7 +15,6 @@ class UpdateTodo extends Component {
     .getTodo(this.state.todoId)
     .then(response => {
       const { title, body } = response.data;
-      
       this.setState({
         title,
         body
